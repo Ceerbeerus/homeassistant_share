@@ -1,0 +1,2 @@
+shell_command:
+  tibber_update: '/config/www/config/tibber_update.sh -t {{tibber_token}} -h {{influxdb_host}} -p {{influxdb_port}} -d {{influxdb_db}} -u {{influxdb_user}} -k {{influxdb_pass}}'

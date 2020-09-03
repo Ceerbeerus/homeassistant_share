@@ -1,0 +1,7 @@
+- alias: Tibber Update
+  initial_state: 'on'
+  trigger:
+    platform: time_pattern
+    hours: "/1"
+  action:
+    - service: script.tibber_update

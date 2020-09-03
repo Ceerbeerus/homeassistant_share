@@ -1,0 +1,10 @@
+tibber_update:
+  sequence:
+    - service: shell_command.tibber_update
+      data_template:
+        tibber_token: !secret tibber_token
+        influxdb_host: !secret influxdb_host
+        influxdb_port: !secret influxdb_port
+        influxdb_db: !secret influxdb_db
+        influxdb_user: !secret influxdb_user
+        influxdb_pass: !secret influxdb_pass
